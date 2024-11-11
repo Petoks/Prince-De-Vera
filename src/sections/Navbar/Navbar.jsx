@@ -11,6 +11,7 @@ function Navbar() {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+    
 
     return (
         <nav className={`${styles.navbar} ${styles[theme]}`}>

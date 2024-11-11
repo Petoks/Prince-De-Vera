@@ -7,8 +7,7 @@ import twitterLight from '../../assets/twitter-light.svg';
 import twitterDark from '../../assets/twitter-dark.svg';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
-
-import CV from '../../assets/cv.pdf';
+import CV from '../../assets/cvprince.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
