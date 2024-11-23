@@ -25,7 +25,7 @@ function Navbar() {
                         About
                     </a>
                     <a href="#projects" className={styles.navItem}>Projects</a>
-                    <a href="#skills" className={styles.navItem}>Skills</a>
+                    
                     <a href="#contact" className={styles.navItem}>Contact</a>
                 </div>
 
