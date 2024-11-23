@@ -54,10 +54,12 @@ function Hero() {
           </a>                   
         </span>
         <p className={styles.description}>
-        A passionate and driven React developer  specialize in building modern, responsive, and user-friendly web applications for businesses of all sizes.
+        "A passionate digital artist creating vibrant, surrealist 
+        landscapes that explore the intersection of nature and dreams. Inspired by the beauty of 
+        everyday life and the mysteries of the subconscious, I aim to craft pieces that evoke curiosity and emotion."
         </p>
         <a href={CV} download>
-          <button className="hover">Resume</button>
+          
         </a>
       </div>
     </section>

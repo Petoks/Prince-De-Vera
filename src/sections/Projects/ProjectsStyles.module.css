@@ -1,40 +1,49 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  
-    img {
-      max-width: 250px;
-      align-self: center;
-      background-color: var(--project-card-bg);
-      border-radius: 20px;
-    }
-  
-    a {
-      width: fit-content;
-      text-decoration: none;
-      color: #222;
-      transition: transform 200ms ease-in-out;
-    }
-  
-    a:hover {
-      transform: scale(1.05);
-    }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--background-color, #f9f9f9); /* Optional variable for bg color */
+}
+
+.container img {
+  max-width: 250px;
+  align-self: center;
+  background-color: var(--project-card-bg, #fff); /* Ensure fallback color */
+  border-radius: 20px;
+  margin: 10px; /* Add consistent margin around images */
+  transition: transform 200ms ease-in-out; /* Add smooth hover effect */
+}
+
+.container a {
+  width: fit-content;
+  text-decoration: none;
+  color: #222;
+  transition: transform 200ms ease-in-out;
+}
+
+.container a:hover {
+  transform: scale(1.05);
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Space between each project */
+}
+
+@media (min-width: 800px) {
   .projectsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    flex-direction: row; /* Switch to row layout on larger screens */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-evenly; /* Evenly distribute items */
+    padding: 0 30px;
+    gap: 20px; /* Adjust gap for larger screens */
   }
-  
-  @media (width >= 800px) {
-    .projectsContainer {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      padding: 0 30px;
-    }
+
+  .container img {
+    max-width: 300px; /* Slightly larger images on wider screens */
+    margin: 15px; /* Increase margin for larger screens */
   }
-  
+}
